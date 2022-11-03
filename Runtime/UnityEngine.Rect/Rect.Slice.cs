@@ -55,7 +55,7 @@ namespace Smidgenomics.Unity.Extensions
 		}
 
 		/// <summary>
-		/// Slices a rect of width w from left and returns it.
+		/// Slices a rect of width w from right and returns it.
 		/// Note: changes original rect
 		/// </summary>
 		/// <param name="r">Rect</param>
