@@ -11,6 +11,6 @@ namespace Smidgenomics.Unity.Extensions
 		/// </summary>
 		/// <param name="v">Value</param>
 		/// <returns>True if approx. zero</returns>
-		public static bool KindaZero(this in float v) => Mathf.Approximately(0f, v);
+		public static bool IsKindaZero(this in float v) => Mathf.Approximately(0f, v);
 	}
 }
