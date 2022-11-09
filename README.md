@@ -9,7 +9,6 @@
 
 **⌛ Planned**
 
-* [ ] Editor extensions (assets, gui etc.)
 * [ ] Preprocessor symbols to disable extensions on a per-type basis (ie. `EXTENSIONS_DISABLE_UNITYENGINE_RECT`.
 * [ ] Online documentation
 
