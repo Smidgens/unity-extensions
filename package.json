@@ -1,6 +1,6 @@
 {
 	"name":"com.smidgenomics.unity-extensions",
-	"version":"0.1.0",
+	"version":"0.3.0",
 	"displayName":"Extensions",
 	"description":"Misc. utility extensions for common types",
 	"repository": {
