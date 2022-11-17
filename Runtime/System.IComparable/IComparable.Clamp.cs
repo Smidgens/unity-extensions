@@ -1,5 +1,7 @@
 // smidgens @ github
 
+#if !EXT_0_SYSTEM_ICOMPARABLE
+
 namespace Smidgenomics.Unity.Extensions
 {
 	using System;
@@ -23,3 +25,5 @@ namespace Smidgenomics.Unity.Extensions
 		}
 	}
 }
+
+#endif
