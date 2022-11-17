@@ -1,5 +1,7 @@
 // smidgens @ github
 
+#if !EXT_0_SYSTEM_FLOAT
+
 namespace Smidgenomics.Unity.Extensions
 {
 	using UnityEngine;
@@ -14,3 +16,5 @@ namespace Smidgenomics.Unity.Extensions
 		public static bool IsKindaZero(this in float v) => Mathf.Approximately(0f, v);
 	}
 }
+
+#endif
