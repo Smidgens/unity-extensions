@@ -2,8 +2,9 @@
 
 // added to unity in 2021.2
 // https://docs.unity3d.com/2021.2/Documentation/ScriptReference/Matrix4x4.GetPosition.html
-
 #if !UNITY_2021_2_OR_NEWER
+
+#if !EXT_0_UNITYENGINE_MATRIX4X4
 
 namespace Smidgenomics.Unity.Extensions
 {
@@ -22,5 +23,7 @@ namespace Smidgenomics.Unity.Extensions
 		}
 	}
 }
+
+#endif
 
 #endif

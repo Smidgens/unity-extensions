@@ -1,5 +1,7 @@
 // smidgens @ github
 
+#if !EXT_0_UNITYEDITOR_SERIALIZEDOBJECT
+
 namespace Smidgenomics.Unity.Extensions.Editor
 {
 	using UnityEditor;
@@ -17,3 +19,5 @@ namespace Smidgenomics.Unity.Extensions.Editor
 		}
 	}
 }
+
+#endif
