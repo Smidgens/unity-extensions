@@ -1,5 +1,7 @@
 // smidgens @ github
 
+#if !EXT_0_UNITYENGINE_VECTOR4
+
 namespace Smidgenomics.Unity.Extensions
 {
 	using UnityEngine;
@@ -22,3 +24,5 @@ namespace Smidgenomics.Unity.Extensions
 		}
 	}
 }
+
+#endif
