@@ -1,13 +1,13 @@
 // smidgens @ github
 
-#if !EXT_0_UNITYENGINE_OBJECT
+#if UNITY_EDITOR && !EXT_0_UNITYENGINE_OBJECT
 
 namespace Smidgenomics.Unity.Extensions.Editor
 {
 	using UnityEditor;
 	using UnityEngine;
 
-	internal static partial class UnityObject_
+	public static partial class Editor_UnityObject_
 	{
 		/// <summary>
 		/// Sets given object as active in editor selection

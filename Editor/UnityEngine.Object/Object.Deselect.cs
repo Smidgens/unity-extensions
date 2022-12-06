@@ -1,6 +1,6 @@
 // smidgens @ github
 
-#if !EXT_0_UNITYENGINE_OBJECT
+#if UNITY_EDITOR && !EXT_0_UNITYENGINE_OBJECT
 
 namespace Smidgenomics.Unity.Extensions.Editor
 {
@@ -8,7 +8,7 @@ namespace Smidgenomics.Unity.Extensions.Editor
 	using UnityEngine;
 	using System.Linq;
 
-	internal static partial class UnityObject_
+	public static partial class Editor_UnityObject_
 	{
 		/// <summary>
 		/// Removes object from editor selection
