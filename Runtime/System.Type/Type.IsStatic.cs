@@ -13,10 +13,10 @@ namespace Smidgenomics.Unity.Extensions
 		/// </summary>
 		/// <param name="t">Type</param>
 		/// <returns>True if type is a static class</returns>
-		public static bool IsStaticClass(this Type t)
+		public static bool IsStatic(this Type t)
 		{
 			// sealed + abstract -> static
-			return t.IsSealed && t.IsAbstract;
+			return t.IsClass && t.IsSealed && t.IsAbstract;
 		}
 	}
 }

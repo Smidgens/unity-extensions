@@ -10,6 +10,9 @@ namespace Smidgenomics.Unity.Extensions.Editor
 
 	public static partial class _String_
 	{
+		/// <summary>
+		/// Tests if given string conforms to a valid asset GUID
+		/// </summary>
 		public static bool IsAssetGUID(this string str)
 		{
 			return Regex.IsMatch(str, "^([a-f]|[0-9]){32}$");

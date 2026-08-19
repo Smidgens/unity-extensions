@@ -14,7 +14,7 @@ namespace Smidgenomics.Unity.Extensions.Editor
 		/// </summary>
 		/// <param name="ob">MonoBehaviour or ScriptableObject</param>
 		/// <returns>Script asset, null if given object is invalid</returns>
-		public static MonoScript GetMonoscript(this Object ob)
+		public static MonoScript GetMonoScript(this Object ob)
 		{
 			var assetType = ob.GetType();
 

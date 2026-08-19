@@ -8,6 +8,11 @@ namespace Smidgenomics.Unity.Extensions
 
 	public static partial class Rect_
 	{
+		public static Rect Resized(this Rect r, in float s)
+		{
+			r.Resize(s);
+			return r;
+		}
 
 		/// <summary>
 		/// Resizes a given rect from its center

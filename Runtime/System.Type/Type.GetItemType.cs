@@ -18,7 +18,7 @@ namespace Smidgenomics.Unity.Extensions
 			var elementType = t;
 
 			// traverse the hierarchy until a non-array is found
-			while (elementType.IsArray)
+			while (elementType is { IsArray: true })
 			{
 				elementType = elementType.GetElementType();
 			}
