@@ -1,4 +1,4 @@
-![](/.github/banner.png?raw=true "")
+<img src="https://raw.githubusercontent.com/Smidgenomics/unity.plugins/master/banners/extensions.png" width="100%"/>
 
 # ℹ️ Features
 
