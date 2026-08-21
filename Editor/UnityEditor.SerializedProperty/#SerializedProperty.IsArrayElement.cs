@@ -1,6 +1,6 @@
 // smidgens @ github
 
-#if UNITY_EDITOR && !EXT_0_UNITYEDITOR_SERIALIZEDPROPERTY
+#if UNITY_EDITOR
 
 namespace Smidgenomics.Unity.Extensions.Editor
 {
@@ -9,7 +9,7 @@ namespace Smidgenomics.Unity.Extensions.Editor
 	public static partial class SerializedProperty_
 	{
 		/// <summary>
-		/// Returns true if given property is part of array
+		/// [Editor] Returns true if given property is part of array
 		/// </summary>
 		public static bool IsArrayElement(this SerializedProperty p)
 		{

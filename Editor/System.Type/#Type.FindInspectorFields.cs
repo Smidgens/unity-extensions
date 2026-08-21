@@ -13,7 +13,12 @@ namespace Smidgenomics.Unity.Extensions.Editor
 
 	public static partial class _Type_
 	{
-		// Find all fields that Unity would default render in the inspector
+		/// <summary>
+		/// [Editor] Find all fields that Unity would default include in the inspector
+		/// </summary>
+		/// <param name="owner"></param>
+		/// <typeparam name="T">Base type to stop at</typeparam>
+		/// <returns></returns>
 		public static IReadOnlyList<FieldInfo> FindInspectorFields<T>(this Type owner)
 		{
 			// NOTE: doesn't work properly for unity components, flags might need to be different

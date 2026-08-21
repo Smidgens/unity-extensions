@@ -1,6 +1,6 @@
 // smidgens @ github
 
-#if UNITY_EDITOR && !EXT_0_UNITYENGINE_OBJECT
+#if UNITY_EDITOR
 
 namespace Smidgenomics.Unity.Extensions.Editor
 {
@@ -10,7 +10,7 @@ namespace Smidgenomics.Unity.Extensions.Editor
 	public static partial class Editor_UnityObject_
 	{
 		/// <summary>
-		/// Checks if given object exists in Asset Database
+		/// [Editor] Checks if given object exists in Asset Database
 		/// </summary>
 		/// <param name="o">Object</param>
 		/// <returns>True if object is a project asset</returns>

@@ -1,6 +1,6 @@
 // smidgens @ github
 
-#if UNITY_EDITOR && !EXT_0_UNITYENGINE_OBJECT
+#if UNITY_EDITOR
 
 namespace Smidgenomics.Unity.Extensions.Editor
 {
@@ -10,7 +10,7 @@ namespace Smidgenomics.Unity.Extensions.Editor
 	public static partial class Editor_UnityObject_
 	{
 		/// <summary>
-		/// Retrieves script asset for given asset
+		/// [Editor] Retrieves script asset for given asset
 		/// </summary>
 		/// <param name="ob">MonoBehaviour or ScriptableObject</param>
 		/// <returns>Script asset, null if given object is invalid</returns>

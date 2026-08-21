@@ -1,6 +1,6 @@
 // smidgens @ github
 
-#if UNITY_EDITOR && !EXT_0_UNITYEDITOR_SERIALIZEDPROPERTY
+#if UNITY_EDITOR
 
 namespace Smidgenomics.Unity.Extensions.Editor
 {
@@ -10,12 +10,12 @@ namespace Smidgenomics.Unity.Extensions.Editor
 	public static partial class SerializedProperty_
 	{
 		/// <summary>
-		/// Retrieves parent property
+		/// [Editor] Retrieves parent property
 		///
 		/// - If the given property is an array element, the outer array prop is returned
 		/// - If property exists on the root level, null is returned
 		/// </summary>
-		public static SerializedProperty GetParent(this SerializedProperty p)
+		public static SerializedProperty GetParentProperty(this SerializedProperty p)
 		{
 			if (p.IsArrayElement())
 			{
@@ -29,7 +29,7 @@ namespace Smidgenomics.Unity.Extensions.Editor
 				// the property exists on the object root level
 				return null;
 			}
-			return p.serializedObject.FindProperty(p.propertyPath.Substring(lastSeparator));
+			return p.serializedObject.FindProperty(p.propertyPath.Substring(0, lastSeparator));
 		}
 	}
 }

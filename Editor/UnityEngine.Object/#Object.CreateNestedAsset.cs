@@ -1,6 +1,6 @@
 // smidgens @ github
 
-#if UNITY_EDITOR && !EXT_0_UNITYENGINE_OBJECT
+#if UNITY_EDITOR
 
 namespace Smidgenomics.Unity.Extensions.Editor
 {
@@ -10,7 +10,7 @@ namespace Smidgenomics.Unity.Extensions.Editor
 	public static partial class Editor_UnityObject_
 	{
 		/// <summary>
-		/// Creates new nested scriptable object asset
+		/// [Editor] Creates new nested scriptable object asset
 		/// </summary>
 		/// <typeparam name="T"></typeparam>
 		/// <param name="parent">Main asset</param>

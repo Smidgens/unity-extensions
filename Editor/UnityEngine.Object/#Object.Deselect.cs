@@ -1,6 +1,6 @@
 // smidgens @ github
 
-#if UNITY_EDITOR && !EXT_0_UNITYENGINE_OBJECT
+#if UNITY_EDITOR
 
 namespace Smidgenomics.Unity.Extensions.Editor
 {
@@ -11,7 +11,7 @@ namespace Smidgenomics.Unity.Extensions.Editor
 	public static partial class Editor_UnityObject_
 	{
 		/// <summary>
-		/// Removes object from editor selection
+		/// [Editor] Removes object from editor selection
 		/// </summary>
 		/// <param name="o">Object to remove from selection</param>
 		public static void Deselect(this Object o)

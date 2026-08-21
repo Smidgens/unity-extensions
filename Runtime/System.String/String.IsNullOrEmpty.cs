@@ -1,7 +1,5 @@
 // smidgens @ github
 
-#if !EXT_0_SYSTEM_STRING
-
 namespace Smidgenomics.Unity.Extensions
 {
 	public static partial class String_
@@ -15,5 +13,3 @@ namespace Smidgenomics.Unity.Extensions
 		}
 	}
 }
-
-#endif

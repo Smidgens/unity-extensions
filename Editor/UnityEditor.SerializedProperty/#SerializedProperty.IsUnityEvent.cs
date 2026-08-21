@@ -1,6 +1,6 @@
 // smidgens @ github
 
-#if UNITY_EDITOR && !EXT_0_UNITYEDITOR_SERIALIZEDPROPERTY
+#if UNITY_EDITOR
 
 namespace Smidgenomics.Unity.Extensions.Editor
 {
@@ -9,16 +9,15 @@ namespace Smidgenomics.Unity.Extensions.Editor
 	public static partial class SerializedProperty_
 	{
 		/// <summary>
-		/// Determines if serialized property
+		/// [Editor] Checks if property is for a UnityEvent object
 		/// </summary>
 		/// <param name="p">Serialized Property</param>
 		/// <returns>True if SP is of type UnityEvent</returns>
 		public static bool IsUnityEvent(this SerializedProperty p)
 		{
 			return
-			p != null
-			&& !p.isArray
-			// not exactly sophisticated but sufficient enough
+			p is { isArray: false }
+			// not exactly sophisticated but good enough
 			&& p.FindPropertyRelative("m_PersistentCalls") != null;
 		}
 	}

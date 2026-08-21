@@ -1,6 +1,6 @@
 // smidgens @ github
 
-#if UNITY_EDITOR && !EXT_0_UNITYENGINE_OBJECT
+#if UNITY_EDITOR
 
 namespace Smidgenomics.Unity.Extensions.Editor
 {
@@ -10,7 +10,7 @@ namespace Smidgenomics.Unity.Extensions.Editor
 	public static partial class Editor_UnityObject_
 	{
 		/// <summary>
-		/// Finds index of asset in currently selected assets
+		/// [Editor] Finds index of asset in currently selected assets
 		/// </summary>
 		/// <param name="o">Object</param>
 		/// <returns>Index in Selection.objects, -1 if not selected</returns>

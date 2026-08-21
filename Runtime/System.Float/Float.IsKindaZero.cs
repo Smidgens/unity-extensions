@@ -1,7 +1,5 @@
 // smidgens @ github
 
-#if !EXT_0_SYSTEM_FLOAT
-
 namespace Smidgenomics.Unity.Extensions
 {
 	using UnityEngine;
@@ -9,12 +7,8 @@ namespace Smidgenomics.Unity.Extensions
 	public static partial class Float_
 	{
 		/// <summary>
-		/// Checks if value approximately equals 0
+		/// Syntactic sugar, equivalent to Mathf.Approximately(v, 0f);
 		/// </summary>
-		/// <param name="v">Value</param>
-		/// <returns>True if approx. zero</returns>
 		public static bool IsKindaZero(this in float v) => Mathf.Approximately(0f, v);
 	}
 }
-
-#endif

@@ -1,7 +1,5 @@
 // smidgens @ github
 
-#if !EXT_0_UNITYENGINE_MONOBEHAVIOUR
-
 namespace Smidgenomics.Unity.Extensions
 {
 	using UnityEngine;
@@ -54,5 +52,3 @@ namespace Smidgenomics.Unity.Extensions
 		}
 	}
 }
-
-#endif

@@ -1,7 +1,5 @@
 // smidgens @ github
 
-#if !EXT_0_SYSTEM_TYPE
-
 namespace Smidgenomics.Unity.Extensions
 {
 	using System;
@@ -12,7 +10,7 @@ namespace Smidgenomics.Unity.Extensions
 		/// <summary>
 		/// Looks for custom attribute on enum value
 		/// </summary>
-		/// <exception cref="ArgumentException"></exception>
+		/// <exception cref="ArgumentException">When given type is not enum</exception>
 		public static T GetEnumValueAttribute<T>(Type enumType, int value) where T : Attribute
 		{
 			if (!enumType.IsEnum)
@@ -24,5 +22,3 @@ namespace Smidgenomics.Unity.Extensions
 		}
 	}
 }
-
-#endif
