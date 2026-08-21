@@ -2,45 +2,38 @@
 
 # ℹ️ Features
 
-* Various utility extensions for commonly used Unity and System types.
-* Supports disabling extensions on a per-type basis: `EXT_0_<NAMESPACE>_<TYPE>`
+* Various helper extensions for Unity, Unity Editor, and System types.
 
-<br/>
-
-
-**⌛ Planned**
-
-* [ ] Extensions for types defined outside Unity core module (Animation, UI, etc.) and preprocessor symbols to selectively enable them: `EXT_1_<NAMESPACE>_<TYPE>`
-* [ ] Online documentation
-
-<br/>
 
 # 📦 Install
 
 1. Open Package Manager
 2. Paste GitHub URL:\
-`https://github.com/Smidgens/unity-extensions.git#<version_tag>`
+`https://github.com/Smidgens/unity-extensions.git#<tag_or_commit>`
 
 
-<br/>
+# 🚀 Usage
 
-# 🚀 Use
+See `Runtime` and `Editor` folders for full list of extensions.
 
-See `Runtime` folder for full list of extensions.
+Includes extensions for:
 
-<br/>
-
-#### ⭕ Disabling extensions for specific type
-
-
-
-Add a preprocessor symbol to your project settings on the form: `EXT_0_<NAMESPACE>_<TYPE>`.
-
-Example:
-
-```cs
-// disables extensions for System.Float
-EXT_0_SYSTEM_FLOAT
-```
-
-
+* `System.Float`
+* `System.IComparable`
+* `System.String`
+* `System.Type`
+* `UnityEditor.SerializedObject`
+* `UnityEditor.SerializedProperty`
+* `UnityEngine.Color`
+* `UnityEngine.Component`
+* `UnityEngine.GameObject`
+* `UnityEngine.LayerMask`
+* `UnityEngine.Matrix4x4`
+* `UnityEngine.MonoBehaviour`
+* `UnityEngine.Object`
+* `UnityEngine.Quaternion`
+* `UnityEngine.Rect`
+* `UnityEngine.Transform`
+* `UnityEngine.Vector2`
+* `UnityEngine.Vector3`
+* `UnityEngine.Vector4`
